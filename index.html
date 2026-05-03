@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tilda Test Assignment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">Studio</span>
+  <ul class="nav-links">
+    <li><a href="#sticky">Scroll</a></li>
+    <li><a href="#interactive">Interact</a></li>
+    <li><a href="#layered">Layers</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Tilda Zero Block - Test Assignment</p>
+    <h1 class="hero-title">Three Mechanics,<br><em>One Page</em></h1>
+    <p class="hero-sub">Sticky scroll, magnetic interaction, and layered composition - demonstrating animation mechanics, adaptive layout, and clean code.</p>
+  </div>
+  <span class="hero-scroll-hint">Scroll to explore</span>
+</section>
+
+<section class="sticky-section" id="sticky">
+  <div class="sticky-section-label">
+    <p class="section-number">01 / Sticky &amp; Step-by-Step</p>
+    <h2 class="section-title">Scroll-Driven<br><em>Narrative</em></h2>
+  </div>
+
+  <div class="sticky-track">
+
+    <div class="sticky-left">
+      <div class="sticky-progress" id="sticky-progress"></div>
+      <ol class="sticky-steps">
+        <li class="sticky-step active" data-step="0">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h3 class="step-headline">Foundation</h3>
+            <p class="step-desc">Every great work begins with a single deliberate choice. Establish the base before building upward.</p>
+          </div>
+        </li>
+        <li class="sticky-step" data-step="1">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h3 class="step-headline">Composition</h3>
+            <p class="step-desc">Layer elements with intention. Negative space speaks as loudly as the elements themselves.</p>
+          </div>
+        </li>
+        <li class="sticky-step" data-step="2">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h3 class="step-headline">Resolution</h3>
+            <p class="step-desc">The final state should feel inevitable - as if it could have been no other way from the start.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+
+    <div class="sticky-right">
+      <div class="sticky-panel" data-panel="0">
+        <div class="sticky-panel-inner">
+          <div class="panel-bg panel-bg-1"></div>
+          <div class="panel-subject panel-subject-1"></div>
+          <div class="panel-overlay">
+            <div class="panel-caption">
+              <small>Chapter I</small>
+              The Dusk Before Dark
+            </div>
+          </div>
+          <span class="panel-tag">01 / 03</span>
+        </div>
+      </div>
+      <div class="sticky-panel" data-panel="1">
+        <div class="sticky-panel-inner">
+          <div class="panel-bg panel-bg-2"></div>
+          <div class="panel-subject panel-subject-2"></div>
+          <div class="panel-overlay">
+            <div class="panel-caption">
+              <small>Chapter II</small>
+              City at Blue Hour
+            </div>
+          </div>
+          <span class="panel-tag">02 / 03</span>
+        </div>
+      </div>
+      <div class="sticky-panel" data-panel="2">
+        <div class="sticky-panel-inner">
+          <div class="panel-bg panel-bg-3"></div>
+          <div class="panel-subject panel-subject-3"></div>
+          <div class="panel-overlay">
+            <div class="panel-caption">
+              <small>Chapter III</small>
+              Into the Canopy
+            </div>
+          </div>
+          <span class="panel-tag">03 / 03</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <span class="divider-text">Custom JS via T123</span>
+  <div class="divider-line"></div>
+</div>
+
+<section class="interactive-section" id="interactive">
+  <div class="interactive-header">
+    <div class="interactive-header-left">
+      <p class="section-number">02 / Custom Interaction</p>
+      <h2 class="section-title interactive-title">Magnetic &amp;<br><em>Scroll-Driven</em></h2>
+    </div>
+    <p class="interactive-header-note">Scroll down to move the ticker rightward, scroll up to reverse. Move your cursor near either button below to feel the magnetic pull.</p>
+  </div>
+
+
+  <div class="marquee-wrapper" id="marquee-wrapper">
+    <div class="marquee-track" id="marquee-track">
+      <div class="marquee-item">
+        <span class="marquee-text">Scroll to animate</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text marquee-text-alt">Direction follows gesture</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Zero friction</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text marquee-text-alt">Pure vanilla JS</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Isolated &amp; clean</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text marquee-text-alt">Feels native</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Scroll to animate</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text marquee-text-alt">Direction follows gesture</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Zero friction</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text marquee-text-alt">Pure vanilla JS</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="magnetic-area">
+    <div class="magnetic-wrap">
+      <p class="magnetic-label">Primary action</p>
+      <button class="magnetic-btn" data-magnetic>Explore Work</button>
+      <p class="magnetic-hint">Hover within 50px to feel the pull</p>
+    </div>
+    <div class="magnetic-wrap">
+      <p class="magnetic-label">Secondary action</p>
+      <button class="magnetic-btn magnetic-btn-filled" data-magnetic>Get in Touch</button>
+      <p class="magnetic-hint">Smooth return on mouse leave</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider">
+  <div class="divider-line"></div>
+  <span class="divider-text">Adaptive Layers</span>
+  <div class="divider-line"></div>
+</div>
+
+<section class="layered-section" id="layered">
+  <div class="layered-header">
+    <p class="section-number">03 / Layered Composition</p>
+  </div>
+
+  <div class="layered-stage">
+
+    <span class="layer-bg-text" aria-hidden="true">Studio</span>
+
+
+    <div class="photos-container" id="photos-container">
+
+      <div class="photo-card photo-1" data-photo>
+        <div class="photo-card-inner photo-1-bg">
+          <div class="photo-placeholder">
+            <span class="photo-placeholder-text">Image 01</span>
+          </div>
+          <div class="photo-meta">
+            <p class="photo-meta-title">Warmth of Amber</p>
+            <p class="photo-meta-sub">Series I</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo-card photo-2" data-photo>
+        <div class="photo-card-inner photo-2-bg">
+          <div class="photo-placeholder">
+            <span class="photo-placeholder-text">Image 02</span>
+          </div>
+          <div class="photo-meta">
+            <p class="photo-meta-title">Deep Horizon</p>
+            <p class="photo-meta-sub">Series II</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo-card photo-3" data-photo>
+        <div class="photo-card-inner photo-3-bg">
+          <div class="photo-placeholder">
+            <span class="photo-placeholder-text">Image 03</span>
+          </div>
+          <div class="photo-meta">
+            <p class="photo-meta-title">Violet Distance</p>
+            <p class="photo-meta-sub">Series III</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo-card photo-4" data-photo>
+        <div class="photo-card-inner photo-4-bg">
+          <div class="photo-placeholder">
+            <span class="photo-placeholder-text">Image 04</span>
+          </div>
+          <div class="photo-meta">
+            <p class="photo-meta-title">Emerald Depth</p>
+            <p class="photo-meta-sub">Series IV</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="layered-title">
+      <h2 class="layered-title-text">
+        Layers of<br><em>Meaning</em>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-left">Three mechanics, zero frameworks.</span>
+  <span class="footer-right">Tilda Zero Block - 2025</span>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+
+  (function initSticky() {
+    const panels = document.querySelectorAll('.sticky-panel');
+    const steps  = document.querySelectorAll('.sticky-step');
+    const progressBar = document.getElementById('sticky-progress');
+
+    if (!panels.length || !steps.length) return;
+
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) return;
+
+    function getActivePanelIndex() {
+      let active = 0;
+      panels.forEach((panel, i) => {
+        const rect = panel.getBoundingClientRect();
+        const mid  = window.innerHeight / 2;
+        if (rect.top <= mid && rect.bottom >= mid) active = i;
+      });
+      return active;
+    }
+
+    function getProgress() {
+      if (!panels.length) return 0;
+      const firstRect = panels[0].getBoundingClientRect();
+      const lastRect  = panels[panels.length - 1].getBoundingClientRect();
+      const total = lastRect.bottom - firstRect.top;
+      const scrolled = window.innerHeight / 2 - firstRect.top;
+      return Math.max(0, Math.min(1, scrolled / total));
+    }
+
+    function update() {
+      const active = getActivePanelIndex();
+      steps.forEach((step, i) => {
+        step.classList.toggle('active', i === active);
+      });
+      if (progressBar) {
+        progressBar.style.height = (getProgress() * 100) + '%';
+      }
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+
+
+  (function initMagnetic() {
+    const RADIUS = 60;
+    const STRENGTH = 0.45;
+
+    document.querySelectorAll('[data-magnetic]').forEach(btn => {
+      let raf = null;
+      let currentX = 0;
+      let currentY = 0;
+      let targetX  = 0;
+      let targetY  = 0;
+      let isActive = false;
+
+      function lerp(a, b, t) { return a + (b - a) * t; }
+
+      function animate() {
+        currentX = lerp(currentX, targetX, 0.12);
+        currentY = lerp(currentY, targetY, 0.12);
+        btn.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+        const dist = Math.sqrt(currentX * currentX + currentY * currentY);
+        if (!isActive && dist < 0.5) {
+          cancelAnimationFrame(raf);
+          raf = null;
+          btn.style.transform = 'translate(0px, 0px)';
+          return;
+        }
+        raf = requestAnimationFrame(animate);
+      }
+
+      document.addEventListener('mousemove', e => {
+        const rect = btn.getBoundingClientRect();
+        const cx = rect.left + rect.width  / 2;
+        const cy = rect.top  + rect.height / 2;
+        const dx = e.clientX - cx;
+        const dy = e.clientY - cy;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < RADIUS) {
+          isActive = true;
+          targetX = dx * STRENGTH;
+          targetY = dy * STRENGTH;
+          if (!raf) raf = requestAnimationFrame(animate);
+        } else {
+          if (isActive) {
+            isActive = false;
+            targetX = 0;
+            targetY = 0;
+            if (!raf) raf = requestAnimationFrame(animate);
+          }
+        }
+      });
+    });
+  })();
+
+
+  (function initMarquee() {
+    const track = document.getElementById('marquee-track');
+    if (!track) return;
+
+    let offset    = 0;
+    let velocity  = 0;
+    let lastScroll = window.pageYOffset;
+    let raf = null;
+
+    function getTrackWidth() {
+      return track.scrollWidth / 2;
+    }
+
+    function tick() {
+      velocity *= 0.88;
+      offset += velocity;
+
+      const w = getTrackWidth();
+      if (w > 0) {
+        offset = ((offset % w) + w) % w;
+      }
+
+      track.style.transform = `translateX(-${offset}px)`;
+      raf = requestAnimationFrame(tick);
+    }
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      const delta = currentScroll - lastScroll;
+      lastScroll = currentScroll;
+      velocity += delta * 0.55;
+      velocity = Math.max(-40, Math.min(40, velocity));
+    }, { passive: true });
+
+    raf = requestAnimationFrame(tick);
+  })();
+
+
+  (function initLayered() {
+    const container = document.getElementById('photos-container');
+    if (!container) return;
+
+    const photos = container.querySelectorAll('[data-photo]');
+
+    photos.forEach(photo => {
+      photo.addEventListener('mouseenter', () => {
+        container.classList.add('has-hover');
+        photo.classList.add('photo-hovered');
+      });
+      photo.addEventListener('mouseleave', () => {
+        container.classList.remove('has-hover');
+        photo.classList.remove('photo-hovered');
+      });
+    });
+  })();
+
+})();
+</script>
+</body>
+</html>
