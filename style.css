@@ -1,11 +1,11 @@
 :root {
   --black: #0a0a0a;
-  --white: #f5f2ed;
-  --cream: #ede9e2;
-  --accent: #c8a96e;
-  --accent-dark: #9c7d45;
-  --muted: #6b6560;
-  --border: rgba(200,169,110,0.25);
+  --white: #f0f4f8;
+  --cream: #e8eef4;
+  --accent: #6FC2B3;
+  --accent-dark: #294B95;
+  --muted: #7a8a9a;
+  --border: rgba(111,194,179,0.25);
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
 }
@@ -65,8 +65,8 @@ section {
   padding: 6rem 4rem;
   border-bottom: 1px solid var(--border);
   background:
-    radial-gradient(ellipse 50% 60% at 80% 40%, rgba(200,169,110,0.06) 0%, transparent 65%),
-    radial-gradient(ellipse 30% 40% at 90% 10%, rgba(200,130,40,0.04) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 80% 40%, rgba(111,194,179,0.06) 0%, transparent 65%),
+    radial-gradient(ellipse 30% 40% at 90% 10%, rgba(41,75,149,0.04) 0%, transparent 55%),
     var(--black);
   position: relative;
   overflow: hidden;
@@ -196,7 +196,7 @@ section {
   transition: color 0.5s;
 }
 .sticky-step:not(.active) .step-num {
-  color: rgba(200,169,110,0.2);
+  color: rgba(111,194,179,0.2);
 }
 .step-headline {
   font-family: var(--font-display);
@@ -481,8 +481,8 @@ section {
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(200,169,110,0.8);
-  border: 1px solid rgba(200,169,110,0.25);
+  color: rgba(111,194,179,0.8);
+  border: 1px solid rgba(111,194,179,0.25);
   padding: 0.35rem 0.75rem;
   border-radius: 2px;
   backdrop-filter: blur(4px);
@@ -623,7 +623,7 @@ section {
   font-weight: 700;
   letter-spacing: -0.04em;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(200,169,110,0.12);
+  -webkit-text-stroke: 1px rgba(111,194,179,0.12);
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
